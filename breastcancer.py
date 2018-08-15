@@ -1,7 +1,7 @@
 import numpy as np 
 import pandas as pd 
 
-bcdata = pd.read_csv('https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer/breast-cancer.data', header=None)    
+bcdata = pd.read_csv('breast-data.csv', header=None)    
 bcdata.columns = ['Class', 'Age', 'Menopause', 'Tumor-Size','Inv-nodes',
  'Node-caps', 'Deg-malig', 'Breast', 'Breast-quad', 'Irradiant']
 bcvals = bcdata.values
